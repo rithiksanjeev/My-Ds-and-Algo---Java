@@ -12,11 +12,12 @@ public class starpattern4 {
             // * * 
             // * 
         int n=10;
+        int middle = n/2;
         int start=1;
         for (int row=1;row<=n;row++)
         {
             start =row;
-            if(row > 5)
+            if(row > middle)
             {
                 start = n-row;
             }
