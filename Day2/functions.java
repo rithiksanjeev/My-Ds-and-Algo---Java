@@ -17,7 +17,7 @@ public class functions {
     public static void greet(){
         System.out.println("hello RIthik,GM!");
     }
-    public static void displayreverse(int n){
+    public static int displayreverse(int n){
         //12345 54321
         int rev=0;
         int rem=0;
@@ -28,6 +28,7 @@ public class functions {
             n = n/10;
         }
         System.out.println(rev);
+        return rev;
     }
     public static int sum(int n)
     {

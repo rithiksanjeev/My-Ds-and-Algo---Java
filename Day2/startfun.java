@@ -33,7 +33,7 @@ public class startfun {
         int nst1=1;
         int nst2=1;
         int nsp=((2*n)-2);
-        for(int row=1;row<=n*2;row++)
+        for(int row=1;row<=(n*2);row++)
         {
             if(row<=n){
                 printstars(nst1);
@@ -58,14 +58,14 @@ public class startfun {
     {
         for(int i=1;i<=n;i++)
         {
-            System.out.print("*");
+            System.out.print("*  ");
         }
     }
     public static void printspace(int n)
     {
-        for(int i=1;i<n;i++)
+        for(int i=1;i<=n;i++)
         {
-            System.out.print(" ");
+            System.out.print("   ");
         }
     }
 }

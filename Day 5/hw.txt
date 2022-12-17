@@ -1,0 +1,28 @@
+1) Two sum
+
+1 2 3 4 5 6
+target =10
+
+by picking any two elements check if the target is 10
+
+2) Three sum
+by picking any three elements check if the target is 10
+
+3) convert a number from decimal to binary
+
+4) convert a binary number to decimal
+
+5) Generate subsequence of a array (try using concept of binary) -> combinations need to print
+
+6) Wave traversal of Matrix (down up down up) in row also
+
+7) Given an integer array => form the number
+
+8) Given an integer (123112313) and a target dig (always one dig) calculate its frequencey
+
+9) sum of two arrays (by forming the number) //make sure the ans should be in array
+
+1 2 3 => A =123
+4 4 5 => B =446 : sum = a+b; store back into array
+
+10) form the reverse of a number (Note :- not allowed to use array) A= 12345 B= 54321
