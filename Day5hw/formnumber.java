@@ -3,7 +3,7 @@ package Day5hw;
 public class formnumber {
     public static void main(String args[])
     {
-        int arr[]= {12311, 45, 6, 78} ;
+        int arr[]= {12311, 45, 6, 781} ;
         int num=0;
         for(int i=0;i<arr.length;i++)
         {
