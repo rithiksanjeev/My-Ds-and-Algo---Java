@@ -1,0 +1,7 @@
+1) compressed string -> 
+      -> rrrriiitttthhikk- r4i3t3h2i1k2
+      Note : rithikr -> r1i1t1h1i1k1r1
+
+2) Try using logic of binary but not generate any number or string and then do computation rater than just simpy in one single loop
+
+// revise all the classes taken until now
