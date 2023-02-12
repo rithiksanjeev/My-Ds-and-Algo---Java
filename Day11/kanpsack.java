@@ -1,11 +1,14 @@
 public class kanpsack {
     public static void main(String args[])
     {
+        // max cost selecting weight == cap
         int cost[] = {10,13,12,13,18,17,15};
         int wt[] = {2,3,1,3,3,2,1};
         int cap = 10;
-        int maxprofit = knapsap(cost,wt,cap,cost.length-1);
+        int dp[][] = new int[cost.length-1][cap+1];
+        int maxprofit = knapsap(cost,wt,cap,cost.length);
         System.out.println(maxprofit);
+
     }
     public static int knapsap(int cost[],int wt[],int cap,int n)
     {
