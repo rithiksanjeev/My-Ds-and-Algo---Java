@@ -93,6 +93,30 @@ public class graphstest {
             }
     }
 
+    public static int noofpath(int src, int dest, ArrayList<Edge> graph[], boolean[] visited, String psf) {
+        System.out.println("Visiting: " + src); // Print the current vertex being visited.
+        
+        if (src == dest) {
+            System.out.println("Path found: " + psf); // Print the path when the destination is reached.
+            return 1;
+        }
+    
+        visited[src] = true;
+        int path = 0;
+        for (Edge ed : graph[src]) {
+            int next = ed.v;
+            if (!visited[next]) {
+                System.out.println("Exploring edge: " + src + " -> " + next);
+                path = path + noofpath(next, dest, graph, visited, psf + src);
+            }
+        }
+    
+        visited[src] = false;
+        System.out.println("Backtracking from: " + src); // Print when backtracking.
+        return path;
+    }
+    
+
 
     public static void addEdgebi(ArrayList<Edge> graph[],int u,int v,int w)
     {
@@ -145,6 +169,7 @@ public class graphstest {
         // Display(graph);
         System.out.println("-------");
         boolean[] visited = new boolean[9];
-        dfs(0,graph,visited);
+       // dfs(0,graph,visited);
+       System.out.println(noofpath(0,4,graph,visited,""));
     }
 }

@@ -8,7 +8,9 @@ public class climbstaris {
        // System.out.println(ans);
        // int ans = countmazepath(2,2);
       //  System.out.println(ans);
-        printmazepath(2,2,"");
+       // printmazepath(2,2,"");
+       int ans =nclimb(3,"");
+       System.out.println(ans);
     }
     // expectation -> total no of paths from n->0
     public static int totalpath(int n)
@@ -101,6 +103,26 @@ public class climbstaris {
         printmazepath(r-1, c,path+"v");
         printmazepath(r, c-1,path+"h");
         printmazepath(r-1, c-1,path+"d");
+    }
+
+    public static int nclimb(int n,String jumps)
+    {
+        //base case
+        if(n==0)
+        {
+            System.out.println(jumps);
+            return 1;
+        }
+        else if(n < 0)
+        {
+            return 0;
+        }
+        int path =0;
+        for(int i=1;i<=n;i++)
+        {
+            path = path + nclimb(n-i,jumps+"J"+i);
+        }
+        return path;
     }
 
 }
